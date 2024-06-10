@@ -16,7 +16,11 @@ For Commodity Traders operate in high volatility markets where split-second deci
 
 **Which open-source LLM and any additional open-source datasets did we use? Explain why**
 
-We chose the DBRX MML model in conjunction with Databricks. The DBRX MML model offers versatility in handling a wide range of natural language queries, making it suitable for our project's requirements also leveraging Databricks for data processing and analysis seamlessly integrates with the DBRX MML model, creating a cohesive workflow.
+We chose the DBRX LLM model in conjunction with Databricks. The DBRX LLM model offers versatility in handling a wide range of natural language queries, making it suitable for our project's requirements also leveraging Databricks for data processing and analysis seamlessly integrates with the DBRX LLM model, creating a cohesive workflow.
+
+- Databricks GenAI SDK: is a layer on top of the REST API. It handles low-level details, such as authentication and mapping model IDs to endpoint URLs, making it easier to interact with the models.
+- AI-Generated Text: is used for generating quality comments using the assistance of Databricks’ recommendation.
+- LLM context (database/tables metadata): generate database/tables context automatically based on the `information_schema` symatic database with Unity-Catalogs.
 
 As a dataset, we have leaveraged the **Crude Oil Prices: West Texas Intermediate - Cushing, Oklahoma** containing WTI spot prices since 1986.
 
